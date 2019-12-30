@@ -1,0 +1,11 @@
+<div class="login-content h-100">
+  <div class="o-c h-100">
+    <div class="app-info app-icon">
+      <h2 class="app-name">App Name</h2>
+    </div>
+
+    <app-enter-pin *ngIf="viewName==='enterPin'" (viewChange)="handleViewChange($event)"></app-enter-pin>
+    <app-forgot-pin *ngIf="viewName==='forgotPin'" (viewChange)="handleViewChange($event)"></app-forgot-pin>
+    <app-email-pwd *ngIf="viewName==='alternateLogin'" (viewChange)="handleViewChange($event)"></app-email-pwd>
+  </div>
+</div>

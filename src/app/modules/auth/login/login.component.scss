@@ -1,0 +1,83 @@
+:host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.login-content{
+  position: relative;
+  font-size: 1rem;
+// .content {
+//   display: inline-block;
+//   width: calc(100% - 250px);
+//   vertical-align: top;
+// }
+  .o-c {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .app-info{
+      &.app-icon{
+        background: url(../../../../assets/images/video-player.svg) no-repeat;
+        margin-bottom: 2rem;
+      }
+      .app-name{
+        text-indent: 100px;
+      }
+    }
+    .card {
+      position: relative;
+      height: 192px;
+      width: 352px;
+      padding: 2rem;
+      box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+      border-radius: 4px;
+      background: white;
+      margin: 0 auto;
+      .a-o-i {
+        // font-size: 30px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
+      .o-t-p, .error {
+        display: block;
+        margin-top: 10px;
+      }
+      .error{
+        color: red;
+        position: absolute;
+      }
+      .forgot-pin{
+        margin: 2rem 0 1rem;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .alternate-login{
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  // .content {
+  //   width: 100%;
+  // }
+  .o-c {
+    display: block;
+  }
+}

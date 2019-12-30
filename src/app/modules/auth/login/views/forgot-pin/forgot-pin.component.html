@@ -1,0 +1,7 @@
+<div class="card forgot-pin-component">
+  <p class="a-o-i">Enter your registered Email-id</p>
+  <input type="email" name="" id="" class="email-box" [(ngModel)]="emailTo">
+  <p class="alternate-login" (click)="handleViewChange('alternateLogin')">Use email address and password instead</p>
+  <p *ngIf="!newPinSent" class="send-pin" (click)="sendPin()">Send PIN</p>
+  <p *ngIf="newPinSent" class="send-pin" (click)="handleViewChange('enterPin')">Login with new PIN</p>
+</div>

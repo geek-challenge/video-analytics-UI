@@ -1,0 +1,9 @@
+<div class="card">
+  <p class="a-o-i">Enter your 6-digit pin to login</p>
+  <ng-otp-input #ngOtpInput (onInputChange)="onOtpChange($event)" *ngIf="showOtpComponent" [config]="config">
+  </ng-otp-input>
+  <!-- <span *ngIf="otp" class="o-t-p">Entered otp :-{{otp}}</span> -->
+  <span *ngIf="errorMsg" class="error">{{errorMsg}}</span>
+  <p class="forgot-pin" (click)="handleViewChange('forgotPin')">Forgot PIN?</p>
+  <p class="alternate-login" (click)="handleViewChange('alternateLogin')">Use email address and password instead</p>
+</div>

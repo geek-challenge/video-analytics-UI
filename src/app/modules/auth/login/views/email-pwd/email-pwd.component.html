@@ -1,0 +1,14 @@
+<div class="card email-pwd-component">
+  <p class="a-o-i">Enter your login credentials</p>
+  <div class="label-input">
+    <label for="email" class="label-header">Email Id</label>
+    <input type="email" name="" id="" class="email-box" [(ngModel)]="email">
+  </div>
+  <div class="label-input">
+    <label for="pwd" class="label-header">Password</label>
+    <input type="password" name="" id="" class="email-box" [(ngModel)]="password">
+  </div>
+  <span *ngIf="errorMsg" class="error">{{errorMsg}}</span>
+  <p class="alternate-login" (click)="handleViewChange('enterPin')">Use PIN instead</p>
+    <button type="submit" class="login-btn" (click)="login()">Login</button>
+</div>
